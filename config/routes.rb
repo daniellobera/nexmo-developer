@@ -49,7 +49,7 @@ Rails.application.routes.draw do
     products.include?(request['product']) && includes_language
   }
 
-  scope '/:locale' do
+  scope '(/:locale)' do
     get '/documentation', to: 'static#documentation'
   end
 
@@ -95,7 +95,7 @@ Rails.application.routes.draw do
     get '/(:product)/*document(/:code_language)', to: 'markdown#show', constraints: DocumentationConstraint.documentation
   end
 
-  scope '/:locale' do
+  scope '/:locale', constraints: { locale: /[a-z]{2}/ } do
     get '/*document(/:code_language)', to: 'markdown#show', constraints: DocumentationConstraint.documentation
   end
 
