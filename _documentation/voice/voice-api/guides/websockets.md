@@ -8,9 +8,9 @@ navigation_weight: 7
 
 ## Overview
 
-WebSockets is a computer communications [protocol](https://tools.ietf.org/html/rfc6455) that provides full-duplex communication channels over a single TCP connection.
+WebSockets is a computer communications [protocol](https://tools.ietf.org/html/rfc6455) that provides full-duplex communication channels over a single, persistent TCP connection without the overhead of the HTTP request/response model.
 
-Using Nexmo’s Voice API, you can connect phone calls to WebSocket endpoints. This means that any application that hosts a WebSocket server can be a participant in a Nexmo voice conversation.
+Using Nexmo’s Voice API, you can connect phone calls to WebSocket endpoints. This means that any application that hosts a WebSocket server can be a participant in a Nexmo voice conversation. It can receive raw audio from and play audio into the call in real time.
 
 This enables some really innovative use cases, such as:
 
