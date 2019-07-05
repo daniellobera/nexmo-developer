@@ -10,7 +10,7 @@ When you send or receive an SMS message you need to be aware of the overall leng
 
 This document covers the following topics:
 
-* [Concatentation](#concatenation)
+* [Concatenation](#concatenation)
 * [Encoding](#encoding)
     * [GSM character sets](#gsm-character-sets)
     * [Unicode](#unicode)
